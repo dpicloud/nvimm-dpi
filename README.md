@@ -7,7 +7,7 @@ sudo apt install neovim -y
 
 --------
 
-## 2 Pre-Instalar VIM-PLUG
+## 2 Pre-Install VIM-PLUG
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
