@@ -89,3 +89,5 @@ sudo apt-get update
 ```bash
 sudo apt-get install neovim -y
 ```
+
+Editor: frankmwilsonm
