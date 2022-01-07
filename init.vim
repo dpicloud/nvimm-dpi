@@ -254,7 +254,7 @@ filetype plugin on
 
 "----------------------------------------------
 ""Ruta de python 
-let g:python3_host_prog = '/usr/bin/python3'
+let g:python3_host_prog = '/data/data/com.termux/files/usr/bin/python3'
 let g:python_host_prog ='/usr/bin/python2'
 
 " ESTE DE ARRIBA ERA PERO EN LINUX DEBE SER OTRA RUTA
