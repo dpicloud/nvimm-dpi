@@ -269,9 +269,9 @@ let g:bracey_server_port = 33461
 
 
 "" Config para los SNIPPETS
-let g:UltiSnipsExpandTrigger="<tab>"
+"""let g:UltiSnipsExpandTrigger="<tab>"
 " list all snippets for current filetype
-let g:UltiSnipsListSnippets="<c-l>"
+"""let g:UltiSnipsListSnippets="<c-l>"
 
 
 "configuracion para MARKDOWN
