@@ -30,7 +30,7 @@ set guioptions-=L
 "============== TEST AREA ===========
 "Ubuntu
 "test
-
+"
 "Get out of insert mode  
 "Salir de modo insertar
 imap hh <Esc>
@@ -39,12 +39,28 @@ imap <C-c> <Esc>l
 imap <C-e> <Esc>3
 nmap <C-e> a
 nmap <C-c> a
+
+"noremap <leader> exit :qa!<cr>
 "Posicionarse al inicio o final de una linea
 nmap n 0 
 nmap m $
 
 " Añadir comentario 
-noremap <leader>ç :Commentary<cr>
+"noremap <leader>/ :Commentary<cr>
+imap cc/ <Esc> :Commentary<cr>i
+noremap cc :Commentary<cr>
+
+
+"cerrar y salir modos
+nmap <C-x> :qa
+nmap <C-x><C-x> :qa!
+nmap <C-x><C-x><C-x> :qa!<cr>
+
+"Salir desde modo insertar
+imap x/ <Esc>5 :qa!
+imap xxx/<Esc>5 :qa!<cr>
+
+
 
 " Añadir texto o pedaso de texto
 " imap <C-k> texto de test
@@ -60,10 +76,6 @@ nmap <C-s> :w<Enter>
 "---Guardar y subir a git branch
 imap <C-s><C-s> <Esc>:! git checkout master && git add . && git commit -m "/as-m" && git push -u origin master && :! git checkout as <Enter>
 nmap <C-s><C-s> :! git checkout master && git add . && git commit -m "/as-m" && git push -u origin master && :! git checkout as <Enter>
-
-"cerrar y salir modos
-nmap <C-x> :qa
-nmap <C-x><C-x><C-x> :qa!
 
 
 "Salir de modo insert, guardar y subida r eapida mediante git GGG -low importance 
@@ -164,10 +176,13 @@ nmap g3 :! git checkout back<Enter>
 
 
 "OPEN VN notions
-nmap <leader>notion :tabnew C:\Users\Acer\AppData\Local\nvim\VN-notions.md<Enter>
+"nmap <leader>notion :tabnew C:\Users\Acer\AppData\Local\nvim\VN-notions.md<Enter>
 
 "OPEN VN notions
-nmap <leader>init :tabnew   /home/lfranz/.config/nvim/init.vim<Enter> 
+nmap <leader>init :tabnew /$HOME/.config/nvim/init.vim<Enter> 
+
+"snippets 
+nmap <leader>snip :tabnew /.config/nvim/plugged/vim-snippets/UltiSnips/
 
 
 "split windows HORIZONTAL
@@ -201,7 +216,7 @@ let g:indentLine_fileTypeExclude=["nerdtree"]
 nmap <Leader>e :NERDTreeToggle<CR>
 
 "toggle close nerdtree
-nmap <Leader>ee :NERDTreeRefreshRoot<CR>
+nmap <Leader>ce :NERDTreeRefreshRoot<CR>
 
 "open cocExplorer 
 "Buscar dos carácteres con easymotion
@@ -255,7 +270,7 @@ filetype plugin on
 "----------------------------------------------
 ""Ruta de python 
 let g:python3_host_prog = '/data/data/com.termux/files/usr/bin/python3'
-let g:python_host_prog ='/usr/bin/python2'
+let g:python_host_prog ='/data/data/com.termux/files/usr/bin/python2'
 
 " ESTE DE ARRIBA ERA PERO EN LINUX DEBE SER OTRA RUTA
 "test text 
@@ -269,9 +284,9 @@ let g:bracey_server_port = 33461
 
 
 "" Config para los SNIPPETS
-"""let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<tab>"
 " list all snippets for current filetype
-"""let g:UltiSnipsListSnippets="<c-l>"
+let g:UltiSnipsListSnippets="<c-l>"
 
 
 "configuracion para MARKDOWN

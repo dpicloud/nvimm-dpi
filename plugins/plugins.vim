@@ -95,4 +95,9 @@ Plug 'gabrielelana/vim-markdown'
 
 "Par añadir comentarios
 Plug 'tpope/vim-commentary'
+
+"Github Copilot
+Plug 'github/copilot.vim'
+
+
 call plug#end()
