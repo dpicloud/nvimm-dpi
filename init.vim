@@ -40,6 +40,7 @@ imap <C-e> <Esc>3
 nmap <C-e> a
 nmap <C-c> a
 
+
 "noremap <leader> exit :qa!<cr>
 "Posicionarse al inicio o final de una linea
 nmap n 0 
@@ -229,9 +230,11 @@ nnoremap <silent> <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 " SHIFT-TAB va para atras 
 nnoremap <silent> <S-TAB> :bprevious<CR>
-"close buffer
-"cerrar buffer
+
+"cerrar buffer (pestaña)
 nmap <leader>bd :bdelete<CR>
+" imap <C-w> :bdelete<CR>
+
 "--gruvbox config--
 "colorscheme onedark
 "let g:gruvbox_contrast_dark = "medium"
