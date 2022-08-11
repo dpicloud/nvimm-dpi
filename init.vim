@@ -107,6 +107,8 @@ tnoremap <silent> <C-m><C-m> <C-\><C-n><C-w><C-+><C-w><C-+><C-w><C-+><C-w><C-+>i
 
 "=======================================================================================
 
+" sneak config 
+let g:sneak#label = 1
 
 "Color rainbown corchetes y llaves 
 nmap <leader>rain :RainbowToggle<Enter>
@@ -275,8 +277,8 @@ let g:UltiSnipsListSnippets="<c-l>"
 
 
 "configuracion para MARKDOWN
-autocmd InsertEnter  *.{markdown,md} set conceallevel=0
-autocmd InsertEnter  *.{markdown,md} set conceallevel=0
+" autocmd InsertEnter  *.{markdown,md} set conceallevel=0
+" autocmd InsertEnter  *.{markdown,md} set conceallevel=0
 "autocmd InsertLeave  *.{markdown,md} set conceallevel=2
 
 

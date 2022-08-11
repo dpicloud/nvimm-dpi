@@ -95,4 +95,8 @@ Plug 'gabrielelana/vim-markdown'
 
 "Par añadir comentarios
 Plug 'tpope/vim-commentary'
+
+"Para el sneak o scope
+Plug 'justinmk/vim-sneak'
+
 call plug#end()
